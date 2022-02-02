@@ -44,6 +44,60 @@ namespace StacksandQueues
 
             }
         }
+        //Displaying the top element
+        //uc2
+        public void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("no element present to peek");
+                return;
+
+            }
+            Console.WriteLine("Top most element "+ this.top.data);
+            
+        }
+        
+        
+        
+    
+        //Displaying the top element
+        //uc2
+        public void Pop()
+        {
+            if (this.top==null)
+            {
+                Console.WriteLine("no element present to Pop");
+                return;
+
+
+            }
+            else
+            {
+                //peek();
+                int deletedNode=this.top.data;
+                this.top = top.next;
+                Console.WriteLine("{0} is deleted from the stack",deletedNode);
+
+            }
+        }
+
+        public bool isEmpty()
+        {
+            while(this.top != null)
+            {
+                Peek();
+                Pop();
+            }
+            return true;
+        }
+       
+
+
+        }
+        
 
     }
-}
+
+    
+

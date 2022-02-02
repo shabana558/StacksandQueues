@@ -83,7 +83,16 @@ namespace StacksandQueues
                     linkedStack.push(70);
                     linkedStack.push(30);
                     linkedStack.push(56);
+                    linkedStack.Display();
 
+                    Console.WriteLine("calling linkedlist methods internally");
+                    //linkedStack.PushMethod(70);
+                    //linkedStack.PushMethod(30);
+                    //linkedStack.PushMethod(56);
+                    //linkedStack.Displaymethod();
+                    linkedStack.Peek();
+                    linkedStack.Pop();
+                    linkedStack.Display();
 
                     break;
 
