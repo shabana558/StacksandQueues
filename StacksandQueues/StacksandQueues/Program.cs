@@ -119,11 +119,10 @@ namespace StacksandQueues
                     customQueue.Enqueue(56);
                     customQueue.Enqueue(30);
                     customQueue.Enqueue(70);
-                    customQueue.Display();
+                   customQueue.Display();
                     break;
 
-                    Console.ReadLine();
-
+                    
 
             }
 

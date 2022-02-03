@@ -35,26 +35,30 @@ namespace StacksandQueues
 
 
 
-        public void Display()
-        {
 
-            Node temp = this.head;
-            if (temp == null)
+        public void Dequeue()
+        {
+            //if queue is empty,return null
+            if (this.head == null)
             {
-                Console.WriteLine("queue is empty");
+                Console.WriteLine("The Queue is empty");
                 return;
+
             }
-            else
-            {
-                while (temp != null)
-                {
-                    Console.Write(" " + temp.data);
-                    temp = temp.next;
-                }
-            }
+            //store previous head and move head pointer one step a head to delete the current element
+            int deletedNode = this.head.data;
+            this.head = this.head.next;
+            Console.WriteLine("\n{0} is deleted from queue", deletedNode);
         }
     }
+
 }
+
+       
+            
+        
+    
+
 
 
 
