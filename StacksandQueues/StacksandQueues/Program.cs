@@ -95,6 +95,32 @@ namespace StacksandQueues
                     linkedStack.Display();
 
                     break;
+                case 3:
+                    Console.WriteLine("Built-In Queue operation");
+                    Queue<int> queue = new Queue<int>();
+                    queue.Enqueue(10);
+                    queue.Enqueue(20);
+                    queue.Enqueue(30);
+                    foreach (int element in queue)
+                    {
+                        Console.WriteLine(element);
+
+                    }
+                    queue.Dequeue();
+                    Console.WriteLine();
+                    Console.WriteLine("After remove");
+                    foreach (int element in queue)
+                    {
+                        Console.WriteLine(element);
+
+                    }
+                    Console.WriteLine("custom Queue class");
+                    LinkedListQueue customQueue= new LinkedListQueue();
+                    customQueue.Enqueue(56);
+                    customQueue.Enqueue(30);
+                    customQueue.Enqueue(70);
+                    customQueue.Display();
+                    break;
 
                     Console.ReadLine();
 
